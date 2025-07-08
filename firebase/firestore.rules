@@ -1,0 +1,292 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /ingressos/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if false;
+    }
+
+    match /ingressos/{parent}/leiao/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if resource.data.usersREF == /databases/$(database)/documents/users/$(request.auth.uid);
+    }
+
+    match /{path=**}/leiao/{document} {
+      allow read: if true;
+    }
+
+
+    match /users/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if request.auth.uid == document;
+    }
+
+    match /users/{parent}/AVALIACAO_de_USUARIO/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/AVALIACAO_de_USUARIO/{document} {
+      allow read: if true;
+    }
+
+
+    match /users/{parent}/ingressos_anunciados_vendedor/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/ingressos_anunciados_vendedor/{document} {
+      allow read: if true;
+    }
+
+
+    match /users/{parent}/dados_bancarios/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if request.auth.uid == parent;
+    }
+
+    match /{path=**}/dados_bancarios/{document} {
+      allow read: if true;
+    }
+
+
+    match /users/{parent}/compra_ingresso/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/compra_ingresso/{document} {
+      allow read: if true;
+    }
+
+
+    match /users/{parent}/denunciar_usuario/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/denunciar_usuario/{document} {
+      allow read: if true;
+    }
+
+
+    match /users/{parent}/enviodocomprovante/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/enviodocomprovante/{document} {
+      allow read: if true;
+    }
+
+
+    match /users/{parent}/verificado_compra/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/verificado_compra/{document} {
+      allow read: if true;
+    }
+
+
+    match /users/{parent}/wallet_extrato/{document} {
+      allow create: if request.auth.uid == parent;
+      allow read: if request.auth.uid == parent;
+      allow write: if request.auth.uid == parent;
+      allow delete: if request.auth.uid == parent;
+    }
+
+    match /favoritos/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if resource.data.users == /databases/$(database)/documents/users/$(request.auth.uid);
+    }
+
+    match /compra/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /compras-FAVORITOS/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if resource.data.usersREF == /databases/$(database)/documents/users/$(request.auth.uid);
+    }
+
+    match /compra_AUMENTAR-ALCANCE-1dia/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if resource.data.usersREF == /databases/$(database)/documents/users/$(request.auth.uid);
+    }
+
+    match /compra_AUMENTAR-ALCANCE-5dias/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if resource.data.usersREF == /databases/$(database)/documents/users/$(request.auth.uid);
+    }
+
+    match /compra_AUMENTAR-ALCANCE-15dias/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if resource.data.usersREF == /databases/$(database)/documents/users/$(request.auth.uid);
+    }
+
+    match /notification-ADD-INGRESSOS/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if request.auth != null;
+      allow delete: if true;
+    }
+
+    match /notification-FAV-INGRESSO/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /notification-ALCANCE_1dia/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /notification_ALCANCE_5dias/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /notification-ALCANCE_15dias/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /notification-Compra_Ingresso-Comprador/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /notification-Compra_Ingresso-Vendedor/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /DADOS-BANCARIOS_VENDEDORES/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if resource.data.users == /databases/$(database)/documents/users/$(request.auth.uid);
+    }
+
+    match /Notification-Envio_do_Ingresso/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /ingressos_comprados/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /compra_verificado/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if resource.data.usersREF == /databases/$(database)/documents/users/$(request.auth.uid);
+    }
+
+    match /notification_leilaoaceito/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /mensagens_suporte/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /cidades/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /EventosBrasil/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /EventosBrasil/{parent}/ingressos_perfil_evento/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/ingressos_perfil_evento/{document} {
+      allow read: if true;
+    }
+
+
+    match /users/{parent}/lancesenviados/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if resource.data.usersCliente == /databases/$(database)/documents/users/$(request.auth.uid);
+    }
+
+    match /{path=**}/lancesenviados/{document} {
+      allow read: if true;
+    }
+
+  }
+}

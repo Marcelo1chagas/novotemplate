@@ -1,0 +1,452 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "ingressos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "melhoraroferta",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "melhoraralcance1dia",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "datacompraalcance",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ingressos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "users",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "data_adicaonoapp",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ingressos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "users",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "valordoingresso",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ingressos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "users",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "valordoingresso",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ingressos_comprados",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "refUsers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "datadacompra",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ingressos_comprados",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "refUsers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "valordoingresso",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ingressos_comprados",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "refUsers",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "valordoingresso",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "notification-Compra_Ingresso-Vendedor",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "users",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "notification-Compra_Ingresso-Comprador",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "users",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "notification-ADD-INGRESSOS",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "users",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "time_created",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "notification_leilaoaceito",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "usersREF_proposta",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "data",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "notification-ALCANCE_1dia",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "users",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "notification_ALCANCE_5dias",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "users",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "notification-ALCANCE_15dias",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "users",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "notification-FAV-INGRESSO",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "users",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "time_cretaed",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Notification-Envio_do_Ingresso",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "usersENVIO_NOTcomprovante",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ingressos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "tema_festa",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tema_show",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tema_esportes",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tema_teatroEconsertos",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "data_adicaonoapp",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ingressos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "tema_festa",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tema_show",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tema_esportes",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tema_teatroEconsertos",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "valordoingresso",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ingressos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "tema_festa",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tema_show",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tema_esportes",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tema_teatroEconsertos",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "valordoingresso",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ingressos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "melhoraroferta",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "melhoraralcance1dia",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tema_show",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "datacompraalcance",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ingressos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "tema_show",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "data_adicaonoapp",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ingressos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "melhoraroferta",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "melhoraralcance1dia",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tema_festa",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "datacompraalcance",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ingressos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "tema_festa",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "data_adicaonoapp",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ingressos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "melhoraroferta",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "melhoraralcance1dia",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tema_esportes",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "datacompraalcance",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ingressos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "melhoraroferta",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "melhoraralcance1dia",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tema_teatroEconsertos",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "datacompraalcance",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ingressos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "tema_teatroEconsertos",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "data_adicaonoapp",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": [
+    {
+      "collectionGroup": "lancesenviados",
+      "fieldPath": "usersCliente",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    }
+  ]
+}

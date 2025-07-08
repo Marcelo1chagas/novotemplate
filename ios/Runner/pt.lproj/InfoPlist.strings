@@ -1,0 +1,2 @@
+NSCameraUsageDescription = "Para tirar uma foto ou gravar um vídeo, nosso aplicativo utiliza a câmera para que você possa tirar fotos do ingresso ou do evento que pretende assistir. Embora não seja obrigatório, recomendamos essa funcionalidade para facilitar o processo de venda.";
+PermissionGroupNotification = "Deseja que a Ticket Exchange te envie notificações das novidades e ingressos";

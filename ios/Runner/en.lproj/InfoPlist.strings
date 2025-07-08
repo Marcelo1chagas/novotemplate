@@ -1,0 +1,2 @@
+NSCameraUsageDescription = "To take a photo or record a video, our app uses the camera so you can take photos of the ticket or the event you intend to attend. Although it is not mandatory, we recommend this functionality to facilitate the sales process.";
+PermissionGroupNotification = "Do you want Ticket Exchange to send you notifications about news and tickets?";
